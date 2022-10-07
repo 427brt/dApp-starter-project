@@ -21,7 +21,7 @@
 
 .bio {
   text-align: center;
-  color: rgb(212, 184, 104);
+  color: black;
   margin-top: 16px;
 }
 
@@ -32,4 +32,23 @@
   border: 0;
   border-radius: 5px;
   
+}
+
+.header {
+  padding: 1rem 2rem;
+  color: black;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#cb00f8), to(#1192e2));
+  background-image: -webkit-linear-gradient(left, #cb00f8 0%, #1192e2 100%);
+  background-image: linear-gradient(to right, #cb00f8 0%, #1192e2 100%);
+}
+
+header:before {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: 4px solid #000;
 }
