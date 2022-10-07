@@ -197,7 +197,7 @@ const App = () => {
           Let's WAVE together!
         </div>
         <div className="bio">
-          イーサリアムウォレットを接続して、メッセージを作成したら、
+          イーサリアムウォレットを接続して、<br></br>メッセージを作成したら、
           <span role="img" aria-label="hand-wave">
             👋
           </span>
@@ -209,17 +209,20 @@ const App = () => {
         <br />
         {/* ウォレットコネクトのボタンを実装 */}
         {!currentAccount && (
-          <button className="waveButton" onClick={connectWallet}>
+          <button className="waveButton btn--orange" onClick={connectWallet}>
             Connect Wallet
           </button>
         )}
         {currentAccount && (
-          <button className="waveButton">Wallet Connected</button>
+          <button className="waveButton btn--orange">Wallet Connected</button>
         )}
         {/* waveボタンにwave関数を連動 */}
         {currentAccount && (
-          <button className="waveButton" onClick={wave}>
-            Wave at Me
+          <button className="waveButton btn--blue btn--shadow" onClick={wave}>
+            Wave at Me 
+            <span role="img" aria-label="hand-wave">
+            👋
+            </span>
           </button>
         )}
         {/* メッセージボックスを実装*/}
@@ -243,7 +246,7 @@ const App = () => {
                 <div
                   key={index}
                   style={{
-                    backgroundColor: "#F8F8FF",
+                    backgroundColor: "#cffbfc",
                     marginTop: "16px",
                     padding: "8px",
                   }}
