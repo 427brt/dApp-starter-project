@@ -218,7 +218,7 @@ const App = () => {
         )}
         {/* waveボタンにwave関数を連動 */}
         {currentAccount && (
-          <button className="waveButton btn--blue btn--shadow" onClick={wave}>
+          <button className="waveButton btn-radius-solid btn--shadow" onClick={wave}>
             Wave at Me 
             <span role="img" aria-label="hand-wave">
             👋
