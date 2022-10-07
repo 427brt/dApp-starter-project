@@ -3,6 +3,7 @@
   justify-content: center;
   width: 100%;
   margin-top: 64px;
+  background-color: rgb(208, 176, 238);
 }
 
 .dataContainer {
@@ -20,7 +21,7 @@
 
 .bio {
   text-align: center;
-  color: gray;
+  color: rgb(212, 184, 104);
   margin-top: 16px;
 }
 

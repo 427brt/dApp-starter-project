@@ -160,15 +160,15 @@ const App = () => {
         let contractBalance_post = await provider.getBalance(
           wavePortalContract.address
         );
-        alert("You waved!");
         //
         /* コントラクトの残高が減っていることを確認 */
         if (contractBalance_post.lt(contractBalance)) {
           /* 減っていたら下記を出力 */
           console.log("User won ETH!");
-          alert("You won ETH");
+          alert("You waved! and You won ETH. \nCongratulations!");
         } else {
           console.log("User didn't win ETH.");
+          alert("You waved!");
         }
         console.log(
           "Contract balance after wave:",
@@ -222,7 +222,6 @@ const App = () => {
             Wave at Me
           </button>
         )}
-        alert("You waved!");
         {/* メッセージボックスを実装*/}
         {currentAccount && (
           <textarea
